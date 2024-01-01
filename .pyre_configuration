@@ -1,0 +1,13 @@
+{
+  "site_package_search_strategy": "pep561",
+  "source_directories": [
+    "src",
+    "tests",
+    "tools"
+  ],
+  "strict": true,
+  "search_path": [
+    { "site-package": "exchangelib" },
+    { "site-package": "aiconfig" }
+  ]
+}

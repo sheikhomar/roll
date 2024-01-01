@@ -1,0 +1,35 @@
+[project]
+name = "roll"
+version = "0.1.0"
+description = "roll"
+authors = [
+    {name = "Omar Ali Sheikh", email = "sheikhomar@gmail.com"},
+]
+dependencies = [
+    "pydantic-settings>=2.1.0",
+    "exchangelib>=5.1.0",
+    "python-aiconfig>=1.1.7",
+    "anyio>=4.2.0",
+    "aiohttp>=3.9.1",
+    "aiofiles>=23.2.1",
+    "pillow>=10.1.0",
+    "streamlit>=1.29.0",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit>=3.6.0",
+    "pyre-check>=0.9.19",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+package-type = "library"
+
+[tool.pdm.scripts]
+ui = "streamlit run tools/streamlit_ui.py --server.port 8606"

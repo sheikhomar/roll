@@ -1,0 +1,6 @@
+{
+  "recommendations": [
+    "charliermarsh.ruff",
+    "fb-pyre-check.pyre-vscode"
+  ]
+}
